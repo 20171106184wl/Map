@@ -11,7 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.2&ak=DUltfwgaw6ozjECzUCeCeZmXe8HGXdOK"></script>
-<title>Insert title here</title>
+<title>地图</title>
 </head>
 <body>
 	<div id="baidu_map" style="width: 800px ; height: 500px">加载中,请稍后...</div>

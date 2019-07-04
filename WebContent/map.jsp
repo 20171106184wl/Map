@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@ page import="imnu.ImgInfoBean"%>
 <%@ page import="imnu.SampleUsage"%>
 <%@ page import="imnu.Position"%>
@@ -10,21 +10,26 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.2&ak=DUltfwgaw6ozjECzUCeCeZmXe8HGXdOK"></script>
+<script type="text/javascript"
+	src="http://api.map.baidu.com/api?v=1.2&ak=DUltfwgaw6ozjECzUCeCeZmXe8HGXdOK"></script>
 <title>地图</title>
+<link href="css/base.css" type="text/css" rel="stylesheet" />
+<link href="css/register.css" type="text/css" rel="stylesheet" />
+
+
 </head>
-<body>
-	<div id="baidu_map" style="width: 800px ; height: 500px">加载中,请稍后...</div>
-</body>
- 
-<script type="text/javascript">
+	<body>
+
+		<iframe src="top.jsp" width="100%" height="100" scrolling="no"
+		frameborder="0"></iframe>
+	
+			<div class="content">
+		
+		<div id="baidu_map" style="width: 800px; height: 500px; margin:0 auto;">加载中,请稍后...
+			
+		<script type="text/javascript">
 	//添加地图
 	var map = new BMap.Map("baidu_map");
-	
-	
-	
-	
-	
 	//读取exiff信息，取坐标，划线
 	<%
 	picDAO pic=new picDAO();
@@ -86,4 +91,13 @@
         map.addControl(top_left_navigation);
         map.addControl(top_right_navigation);	
 </script>
+</div>
+</div>
+
+
+<iframe src="foot.jsp" width="100%" height="150" scrolling="no"
+	frameborder="0"></iframe>
+</body>
+
+
 </html>

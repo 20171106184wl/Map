@@ -59,7 +59,7 @@ public static void closeJDBC(ResultSet result, Statement stmt, Connection conn) 
 	}
 }
 
-public static void runTest() throws SQLException,IOException{
+	/*public static void runTest() throws SQLException,IOException{
 	Connection conn=getConnection();
 	Statement stmt =conn.createStatement();
 	ResultSet result = stmt.executeQuery("select * from tb_company");
@@ -84,6 +84,6 @@ public static void runTest() throws SQLException,IOException{
 			e.printStackTrace();
 		}
 
-	}
+	}*/
 
 }

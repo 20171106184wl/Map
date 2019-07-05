@@ -22,8 +22,8 @@
 				<img src="images/main_logo.png" height="24" />
 			</div>
 			<div class="head_user">
-				<a href="administrator.jsp" target="_parent"><span class="type1">管理员登录</a>
-				<a href="login.jsp" target="_parent"><span class="type1">登录</a>
+				<a href="searchMap.jsp" target="_parent"><span class="type1">查找地址</a>
+				<a href="map.jsp" target="_parent"><span class="type1">运动轨迹</a>
 				<a href="register.jsp" target="_parent"><span class="type2">注册</span></a>
 				<a href="bookChoose.jsp" target="_parent">书店</a> 
 				<a href="register.jsp" target="_parent">退出</a>	

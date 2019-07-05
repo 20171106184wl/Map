@@ -44,6 +44,7 @@ a { color: #19a8b6;text-decoration:none}
 	margin:20px;
 }
 .centr{
-	float:left;
-	margin:20px;
+	width:800px; 
+	margin:0 auto;
+	height:60px;
 }

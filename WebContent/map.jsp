@@ -19,10 +19,7 @@
 
 </head>
 	<body>
-
-		<iframe src="top.jsp" width="100%" height="100" scrolling="no"
-		frameborder="0"></iframe>
-	
+		<iframe src="top.jsp" width="100%" height="100" scrolling="no" frameborder="0"></iframe>
 			<div class="content">
 		
 		<div id="baidu_map" style="width: 800px; height: 500px; margin:0 auto;">加载中,请稍后...
@@ -98,6 +95,5 @@
 <iframe src="foot.jsp" width="100%" height="150" scrolling="no"
 	frameborder="0"></iframe>
 </body>
-
 
 </html>

@@ -25,8 +25,7 @@
 				<a href="searchMap.jsp" target="_parent"><span class="type1">查找地址</a>
 				<a href="map.jsp" target="_parent"><span class="type1">运动轨迹</a>
 				<a href="walkMap.jsp" target="_parent"><span class="type2">步行导航</span></a>
-				<a href="bookChoose.jsp" target="_parent">书店</a> 
-				<a href="register.jsp" target="_parent">退出</a>	
+				<a href="myPositon.jsp" target="_parent"><span class="type2">当前城市</span></a>
 			</div>
 			<div class="clear"></div>
 		</div>

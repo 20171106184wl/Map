@@ -11,7 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <script type="text/javascript"
-	src="http://api.map.baidu.com/api?v=1.2&ak=DUltfwgaw6ozjECzUCeCeZmXe8HGXdOK"></script>
+	src="http://api.map.baidu.com/api?v=1.4&ak=DUltfwgaw6ozjECzUCeCeZmXe8HGXdOK"></script>
 <title>地图</title>
 <link href="css/base.css" type="text/css" rel="stylesheet" />
 <link href="css/register.css" type="text/css" rel="stylesheet" />
@@ -61,7 +61,6 @@
 			var nowy="<%=nowpoi.y%>";
 			var point = new BMap.Point(parseFloat(nowx),parseFloat(nowy));
 			
-			
 
 			map.centerAndZoom(point, 15);  // 初始化地图,设置中心点坐标和地图级别
 		 
@@ -81,12 +80,12 @@
 	
 	
 	//添加控件
-        var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+    var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
 	var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
 	var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角，仅包含平移和缩放按钮
 	map.addControl(top_left_control);
-        map.addControl(top_left_navigation);
-        map.addControl(top_right_navigation);	
+    map.addControl(top_left_navigation);
+    map.addControl(top_right_navigation);	
 </script>
 </div>
 </div>

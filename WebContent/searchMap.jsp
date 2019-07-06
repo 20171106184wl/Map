@@ -10,7 +10,7 @@
 		#allmap{width:800px;margin:0 auto;height:500px;}
 		p{margin-left:5px; font-size:14px;}
 	</style>
-	<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.2&ak=DUltfwgaw6ozjECzUCeCeZmXe8HGXdOK"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4&ak=DUltfwgaw6ozjECzUCeCeZmXe8HGXdOK"></script>
 	<title>根据关键字本地搜索</title>
 	<link href="css/base.css" rel="stylesheet" type="text/css">
 </head>
@@ -39,9 +39,17 @@
 <script type="text/javascript">
 	// 百度地图API功能
 	var map = new BMap.Map("allmap");          
-	map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);
+	map.centerAndZoom(new BMap.Point(111.65, 40.82), 11);
 	var local = new BMap.LocalSearch(map, {
 		renderOptions:{map: map}
 	});
 	local.search("<%=request.getParameter("location")%>");
+	map.enableScrollWheelZoom();  // 启用滚轮放大缩小。
+	var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+	var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+	var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角，仅包含平移和缩放按钮
+	map.addControl(top_left_control);
+	map.addControl(top_left_navigation);
+	map.addControl(top_right_navigation);	
+	
 </script>

@@ -15,7 +15,7 @@
 					<li><img src="images/nav_inc1.png" /><a href="searchBook.jsp"
 						target="_parent">查找</a></li>	
 					<li><img src="images/nav_inc2.png" /><a href="#">成功案例</a></li>
-					<li><img src="images/nav_inc3.png" /><a href="#">关于Bookstore</a></li>
+					<li><img src="images/nav_inc3.png" /><a href="#">关于地图</a></li>
 				</ul>
 			</div>
 			<div class="head_logo">
@@ -24,7 +24,7 @@
 			<div class="head_user">
 				<a href="searchMap.jsp" target="_parent"><span class="type1">查找地址</a>
 				<a href="map.jsp" target="_parent"><span class="type1">运动轨迹</a>
-				<a href="register.jsp" target="_parent"><span class="type2">注册</span></a>
+				<a href="walkMap.jsp" target="_parent"><span class="type2">步行导航</span></a>
 				<a href="bookChoose.jsp" target="_parent">书店</a> 
 				<a href="register.jsp" target="_parent">退出</a>	
 			</div>
@@ -34,10 +34,10 @@
 
 	<div class="top_main">
 		<div class="top_logo">
-		<img src="images/main_logo.png" height="48"/>
+		<img src="images/main_logo.png" height="30"/>
 		</div>
 		
-		<div class="top_instr">购物车</div>
+		<div class="top_instr">地图</div>
 		<div class="top_tel">
 			<img src="images/it-phone.png" />
 		</div>
